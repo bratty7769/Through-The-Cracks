@@ -1,167 +1,139 @@
-/* GLOBAL STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #000;
 }
 
-header {
-  background: #222;
-  color: white;
-  padding: 1rem;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
-footer {
-  background: #222;
-  color: white;
-  padding: 1rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-/* NAVIGATION */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 15px;
+.nav-links li {
+    display: inline;
 }
 
-nav ul li a {
-  font-size: 18px;
-  color: white;
-  text-decoration: none;
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
-/* NAVIGATION ACTIVE LINK */
-nav ul li a.active {
-  font-weight: bold;
-  text-decoration: underline;
+.nav-links a:hover {
+    color: #f39c12;
 }
 
-/* HERO SECTION */
+/* Hero Section */
 .hero {
-  padding: 50px;
-  background: #eaeaea;
+    position: relative;
+    height: 100vh;
+    background: url('your-image.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.hero h2 {
-  margin: 0;
-  font-size: 28px;
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 5px;
 }
 
-/* ARTICLES LIST */
-.articles-list {
-  padding: 40px;
-  text-align: left; /* so articles are left-aligned */
-  max-width: 800px;
-  margin: 0 auto;  /* center the articles */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
-.articles-list article {
-  background: #fff;
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
-.articles-list h3 {
-  margin-top: 0;
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    background-color: #f39c12;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-.articles-list p {
-  line-height: 1.6;
+.btn:hover {
+    background-color: #d35400;
 }
 
-/* BUTTON / LINK STYLES */
-a.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #333;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 5px;
+/* Manifesto Section */
+.manifesto {
+    padding: 60px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* INTRO FEATURED SECTION */
-.intro-box {
-  background: #444;
-  color: white;
-  padding: 25px;
-  margin: 20px auto;
-  max-width: 900px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: left;
+.manifesto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
-.intro-box h3 {
-  color: #ffcc00; /* Accent color for emphasis */
-  margin-bottom: 10px;
+.manifesto p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
-.intro-box p {
-  line-height: 1.6;
+/* Subscription Section */
+.subscribe {
+    text-align: center;
+    padding: 60px;
+    background: #111;
 }
 
-/* GENERAL LAYOUT FOR ABOUT PAGE */
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
+.subscribe h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-/* INDIVIDUAL INFO BOXES */
-.about-box {
-  background: white;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 800px;
-  text-align: left;
+.subscribe p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
-/* SPECIAL STYLING FOR IMPORTANT SECTIONS */
-.highlight-box {
-  background: #f7f7f7;
-  border-left: 5px solid #444;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    background-color: #111;
 }
-
-.cta-box {
-  background: #222;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  padding: 30px;
-  border-radius: 8px;
-}
-
-.cta-box p {
-  font-size: 18px;
-}
-
-/* LIST STYLES */
-.about-box ul {
-  padding-left: 20px;
-}
-
-.about-box ul li {
-  margin-bottom: 10px;
-}
-
