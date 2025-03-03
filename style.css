@@ -18,7 +18,7 @@ footer {
   background: #222;
   color: white;
   padding: 1rem;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -35,10 +35,16 @@ nav ul li {
   margin: 0 15px;
 }
 
-/* Note: We are not defining color here for links so that our JS (targeting .nav-link) can override it */
 nav ul li a {
   font-size: 18px;
+  color: white;
   text-decoration: none;
+}
+
+/* NAVIGATION ACTIVE LINK */
+nav ul li a.active {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* HERO SECTION */
@@ -65,6 +71,7 @@ nav ul li a {
   margin: 20px 0;
   padding: 20px;
   border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .articles-list h3 {
@@ -86,3 +93,75 @@ a.btn {
   font-size: 18px;
   border-radius: 5px;
 }
+
+/* INTRO FEATURED SECTION */
+.intro-box {
+  background: #444;
+  color: white;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.intro-box h3 {
+  color: #ffcc00; /* Accent color for emphasis */
+  margin-bottom: 10px;
+}
+
+.intro-box p {
+  line-height: 1.6;
+}
+
+/* GENERAL LAYOUT FOR ABOUT PAGE */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* INDIVIDUAL INFO BOXES */
+.about-box {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  text-align: left;
+}
+
+/* SPECIAL STYLING FOR IMPORTANT SECTIONS */
+.highlight-box {
+  background: #f7f7f7;
+  border-left: 5px solid #444;
+}
+
+.cta-box {
+  background: #222;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.cta-box p {
+  font-size: 18px;
+}
+
+/* LIST STYLES */
+.about-box ul {
+  padding-left: 20px;
+}
+
+.about-box ul li {
+  margin-bottom: 10px;
+}
+
