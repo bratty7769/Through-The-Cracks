@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,41 +6,62 @@ body {
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
-}
-
-header {
+  }
+  
+  header {
     background: #222;
     color: white;
     padding: 1rem;
-}
-
-nav ul {
+  }
+  
+  footer {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* NAVIGATION */
+  nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
+    margin: 0; /* remove default margin */
+  }
+  
+  nav ul li {
     display: inline;
     margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.hero {
+  }
+  
+  /* Force all states to stay white at 18px */
+  nav ul li a,
+  nav ul li a:link,
+  nav ul li a:visited,
+  nav ul li a:hover,
+  nav ul li a:focus,
+  nav ul li a:active {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    line-height: normal !important;
+    outline: none !important;
+  }
+  
+  /* HERO SECTION */
+  .hero {
     padding: 50px;
     background: #eaeaea;
-}
-
-.hero h2 {
+  }
+  
+  .hero h2 {
     margin: 0;
     font-size: 28px;
-}
-
-.btn {
+  }
+  
+  /* BUTTONS */
+  .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -48,13 +70,25 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
-}
-
-footer {
-    background: #222;
-    color: white;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+  }
+  .articles-list {
+    padding: 40px;
+    text-align: left; /* So article text is left-aligned */
+  }
+  
+  .articles-list article {
+    background: #fff;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .articles-list h3 {
+    margin-top: 0;
+  }
+  
+  .articles-list p {
+    line-height: 1.6;
+  }
+  
