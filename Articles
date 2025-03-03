@@ -1,0 +1,53 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Articles - Through the Cracks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Through the Cracks</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Our Articles</h2>
+    <p>Browse our in-depth features, policy updates, and research insights.</p>
+  </section>
+
+  <section class="articles-list">
+    <!-- Example Article 1 -->
+    <article>
+      <h3>Title of Article One</h3>
+      <p>
+        Brief intro or summary. Explain the core topic or theme here. 
+        <a href="#">Read More &raquo;</a>
+      </p>
+    </article>
+
+    <!-- Example Article 2 -->
+    <article>
+      <h3>Title of Article Two</h3>
+      <p>
+        Another brief intro or summary. Offer context or a teaser for the full article. 
+        <a href="#">Read More &raquo;</a>
+      </p>
+    </article>
+
+    <!-- Add more articles as needed -->
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Through the Cracks. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
