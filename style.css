@@ -58,11 +58,13 @@ body {
 }
 
 /* Extra space below "Through the Cracks" */
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 40px; /* More space below */
+..hero h1 {
+  font-size: 4rem; /* Bigger */
+  font-weight: 700; /* Bolder */
+  text-align: right; /* Moves it to the right */
+  margin-bottom: 40px; /* Adds space below */
+  margin-right: 50px; /* Moves it slightly away from the right edge */
+  padding-right: 20px;
 }
 
 .overlay {
