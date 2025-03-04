@@ -9,9 +9,9 @@ body {
 }
 
 /* Navbar */
-.navbar {
+..navbar {
   display: flex;
-  justify-content: center; /* Centers the nav links */
+  justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
   padding: 20px 40px;
@@ -20,6 +20,9 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
+  
+  /* ADD MORE SPACE BELOW THE NAVBAR */
+  margin-bottom: 40px;
 }
 
 .nav-links {
@@ -45,14 +48,21 @@ body {
 
 /* Hero Section */
 .hero {
-    position: relative;
-    height: 100vh;
-    background: url('your-image.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 80px 20px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px; /* Increase padding at the top */
+}
+
+/* Extra space below "Through the Cracks" */
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 40px; /* More space below */
 }
 
 .overlay {
@@ -97,10 +107,11 @@ body {
     margin: 0 auto;
 }
 
-.manifesto h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-weight: 600;
+..manifesto {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 80px auto; /* Add space before the section */
 }
 
 .manifesto p {
