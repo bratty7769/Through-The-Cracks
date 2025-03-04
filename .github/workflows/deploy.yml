@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # This tells GitHub to use a hosted runner
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
