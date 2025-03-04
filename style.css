@@ -9,9 +9,9 @@ body {
 }
 
 /* Navbar */
-..navbar {
+.navbar {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Ensures center alignment */
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
   padding: 20px 40px;
@@ -20,15 +20,13 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  
-  /* ADD MORE SPACE BELOW THE NAVBAR */
-  margin-bottom: 40px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 20px;
+  padding: 0;
 }
 
 .nav-links li {
@@ -40,6 +38,8 @@ body {
   color: #fff;
   font-weight: 600;
   transition: color 0.3s;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 .nav-links a:hover {
@@ -54,7 +54,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 100px 20px; /* Increase padding at the top */
+  padding: 140px 20px 80px; /* Increased top padding to push content down */
 }
 
 /* Extra space below "Through the Cracks" */
@@ -108,10 +108,10 @@ body {
 }
 
 ..manifesto {
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
   max-width: 800px;
-  margin: 80px auto; /* Add space before the section */
+  margin: 100px auto; /* Add space before the section */
 }
 
 .manifesto p {
