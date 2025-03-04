@@ -12,21 +12,21 @@ permissions:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # This tells GitHub to use a hosted runner
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v4
 
       - name: Build site
         run: echo "Building site..."  # Replace with actual build commands if needed
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
-          path: .  # Adjust if necessary
+          path: .  # Adjust this path if necessary
 
       - name: Deploy
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
