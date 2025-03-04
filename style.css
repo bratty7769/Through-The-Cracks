@@ -9,10 +9,9 @@ body {
 }
 
 /* Navbar */
-/* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between; /* Moves logo left and menu right */
+  justify-content: space-between; /* Keeps logo left and menu centered */
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
   padding: 20px 40px;
@@ -30,6 +29,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
+  flex: 1; /* Pushes the menu towards center */
 }
 
 /* Navigation Links */
@@ -38,6 +38,11 @@ body {
   display: flex;
   gap: 30px;
   padding: 0;
+  flex: 2; /* Centers the navigation menu */
+  justify-content: center; /* Ensures links are centered */
+  align-items: center;
+  width: 100%; /* Makes sure it takes full width */
+  text-align: center;
 }
 
 .nav-links li {

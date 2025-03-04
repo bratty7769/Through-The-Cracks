@@ -1,0 +1,161 @@
+/* ARTICLES PAGE STYLES */
+.articles-container {
+    max-width: 900px;
+    margin: 120px auto 50px;
+    padding: 20px;
+}
+
+/* Most Read Article */
+.most-read {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.most-read .article-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.most-read .article-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+.most-read img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.most-read h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #f39c12; /* Orange */
+    transition: color 0.3s ease;
+}
+
+.most-read h3:hover {
+    color: #d35400; /* Darker Orange */
+}
+
+.most-read p {
+    color: #aaa;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.most-read .btn {
+    background: #f39c12;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+    color: #000;
+}
+
+.most-read .btn:hover {
+    background: #d35400;
+    transform: scale(1.05);
+}
+
+/* Other Articles - Scrollable Cards */
+.other-articles {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.articles-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    padding: 10px;
+}
+
+.articles-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.article-card {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 0 0 280px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.article-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+.article-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.article-card h3 {
+    font-size: 1.2rem;
+    color: #f39c12; /* Orange */
+    transition: color 0.3s ease;
+}
+
+.article-card h3:hover {
+    color: #d35400; /* Darker Orange */
+}
+
+.article-card p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Ensure text is readable */
+.articles-container h2 {
+    color: #f39c12; /* Orange for section headers */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.article-card a {
+    color: #f39c12;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.article-card a:hover {
+    color: #d35400;
+}
+.articles-container {
+    max-width: 900px;
+    margin: 120px auto 50px;
+    padding: 20px;
+}
+
+/* Article Cards */
+.article-card {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.article-card h3 {
+    font-size: 1.2rem;
+    color: #fff;
+}

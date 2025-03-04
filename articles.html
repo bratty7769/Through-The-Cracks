@@ -4,58 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles - Through the Cracks</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ensures styling matches the home page -->
-    <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="style.css">  <!-- Keep main styles -->
+    <link rel="stylesheet" href="article.css"> <!-- This is for articles page styling -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/articles.css">
 </head>
 <body>
 
+    <!-- Navigation (Same as Homepage) -->
     <header class="navbar">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="articles.html">Articles</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <h1 class="site-title">Through the Cracks</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="manifesto.html">Manifesto</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-        <h1>Articles</h1>
-
-        <!-- Most Read Articles Section -->
+    <!-- Articles Section -->
+    <main class="articles-container">
+        
+        <!-- Most Read Article -->
         <section class="most-read">
-            <h2>Most Read Articles</h2>
-            <div class="article-boxes">
-                <div class="article-box">
-                    <a href="article1.html">Most Read Article 1</a>
-                </div>
-                <div class="article-box">
-                    <a href="article2.html">Most Read Article 2</a>
-                </div>
-                <div class="article-box">
-                    <a href="article3.html">Most Read Article 3</a>
-                </div>
+            <h2>Most Read</h2>
+            <div class="article-card featured">
+                <a href="https://time-to-listen.com/2024/10/07/the-power-of-words-a-psycholinguistic-exploration-of-addiction/" target="_blank">
+                    <img src="your-featured-image.jpg" alt="The Power of Words">
+                    <div class="article-info">
+                        <h3>The Power of Words: A Psycholinguistic Exploration of Addiction</h3>
+                        <p>How language shapes perceptions of addiction, stigma, and recovery.</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </a>
             </div>
         </section>
 
-        <!-- Other Articles Section -->
+        <!-- Other Articles -->
         <section class="other-articles">
             <h2>Other Articles</h2>
-            <div class="snippets">
-                <div class="snippet">
-                    <h3>Snippet Title 1</h3>
-                    <p>Brief summary of the article content...</p>
+            <div class="articles-scroll">
+                <div class="article-card">
+                    <a href="#">
+                        <img src="article-thumbnail.jpg" alt="Article Title">
+                        <h3>Another Insightful Piece</h3>
+                        <p>A brief description of the article’s content...</p>
+                    </a>
                 </div>
-                <div class="snippet">
-                    <h3>Snippet Title 2</h3>
-                    <p>Brief summary of the article content...</p>
+                <div class="article-card">
+                    <a href="#">
+                        <img src="article-thumbnail.jpg" alt="Article Title">
+                        <h3>Exploring Harm Reduction</h3>
+                        <p>Understanding harm reduction strategies...</p>
+                    </a>
                 </div>
-                <div class="snippet">
-                    <h3>Snippet Title 3</h3>
-                    <p>Brief summary of the article content...</p>
+                <div class="article-card">
+                    <a href="#">
+                        <img src="article-thumbnail.jpg" alt="Article Title">
+                        <h3>The Neuroscience of Craving</h3>
+                        <p>Breaking down the science behind addiction...</p>
+                    </a>
                 </div>
             </div>
         </section>
+        
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Through the Cracks. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
