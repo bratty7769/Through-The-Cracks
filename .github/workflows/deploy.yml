@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change if using a different branch
+      - main
 
 permissions:
   contents: read
@@ -24,9 +24,10 @@ jobs:
         run: echo "Building site..."  # Replace with actual build commands if needed
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v2
         with:
           path: .  # Adjust this path if necessary
 
       - name: Deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v2
+
