@@ -1,6 +1,5 @@
 name: Deploy to GitHub Pages
 # Triggering workflow again
-
 on:
   push:
     branches:
@@ -31,3 +30,4 @@ jobs:
 
       - name: Deploy
         uses: actions/deploy-pages@v2
+
