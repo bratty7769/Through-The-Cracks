@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles - Through the Cracks</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles - Through the Cracks</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Latest Articles</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Through the Cracks</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="articles.html" class="active">Articles</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section>
-        <h2>From <a href="https://time-to-listen.com/" target="_blank">Time to Listen</a></h2>
-        <ul id="blog-posts">Loading articles...</ul>
-    </section>
+  <main>
+    <!-- Content will go here -->
+  </main>
 
-    <script>
-      async function fetchBlogPosts() {
-        try {
-          const response = await fetch('https://time-to-listen.com/feed/');
-          const text = await response.text();
-          const parser = new DOMParser();
-          const xml = parser.parseFromString(text, 'text/xml');
-          const items = xml.querySelectorAll('item');
-          
-          let html = '';
-          items.forEach((item, index) => {
-            if (index < 5) { // Display only 5 latest articles
-              const title = item.querySelector('title').textContent;
-              const link = item.querySelector('link').textContent;
-              html += `<li><a href="${link}" target="_blank">${title}</a></li>`;
-            }
-          });
-
-          document.getElementById('blog-posts').innerHTML = html;
-        } catch (error) {
-          document.getElementById('blog-posts').innerHTML = "<p>Failed to load articles.</p>";
-        }
-      }
-
-      fetchBlogPosts();
-    </script>
+  <footer>
+    <p>&copy; 2025 Through the Cracks. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
+<main>
+  <section id="most-read">
+    <h2>Most Read Articles</h2>
+    <ul>
+      <li><a href="#">How Trauma Shapes Addiction</a></li>
+      <li><a href="#">The Realities of Co-Existing Mental Health and Substance Use</a></li>
+      <li><a href="#">A Call for Integrated Care Models</a></li>
+    </ul>
+  </section>
+</main>
+<main>
+  <section id="most-read">
+    <h2>Most Read Articles</h2>
+    <ul>
+      <li><a href="#">How Trauma Shapes Addiction</a></li>
+      <li><a href="#">The Realities of Co-Existing Mental Health and Substance Use</a></li>
+      <li><a href="#">A Call for Integrated Care Models</a></li>
+    </ul>
+  </section>
+
+  <section id="other-articles">
+    <h2>Other Articles</h2>
+    <article>
+      <h3><a href="#">Breaking the Cycle of Stigma</a></h3>
+      <p>Stigma around addiction and mental health creates barriers to care. This article explores practical ways to reduce stigma and improve outcomes.</p>
+    </article>
+    <article>
+      <h3><a href="#">The Cost of Siloed Services</a></h3>
+      <p>Separated mental health and addiction services leave individuals without adequate support. We explore why integration is critical.</p>
+    </article>
+    <article>
+      <h3><a href="#">How Policy Can Save Lives</a></h3>
+      <p>Policy changes are often overlooked in healthcare discussions, but they’re a powerful tool for addressing co-existing challenges.</p>
+    </article>
+  </section>
+</main>
